@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="bootcamp_practice" type="bootcamp_practice_publisher_node" name="bootcamp_practice_publisher" output="screen">
+    </node>
+    <node pkg="bootcamp_practice" type="bootcamp_practice_subscriber_node" name="bootcamp_practice_subscriber" output="screen">
+    </node>
+</launch>

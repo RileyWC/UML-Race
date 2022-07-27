@@ -1,0 +1,14 @@
+<launch>
+    <node pkg="wall_tf_publisher" type="wall_tf_publisher_node" name="wall_tf_publisher" output="screen">
+        <param name="topic_name" type="string" value="/robot/base_scan"/>
+        <param name="laser_frame" type="string" value="/base_laser_link"/>
+        <param name="nearest_wall_frame" type="string" value="/nearest_wall"/>
+        <param name="right_nearest_wall_frame" type="string" value="/right_nearest_wall"/>
+        <param name="center_nearest_wall_frame" type="string" value="/center_nearest_wall"/>
+        <param name="left_nearest_wall_frame" type="string" value="/left_nearest_wall"/>
+    </node>
+    <node pkg="wall_tf_publisher" type="wall_tf_listener_node" name="wall_tf_listener" output="screen">
+        <param name="laser_frame" type="string" value="/base_laser_link"/>
+        <param name="nearest_wall_frame" type="string" value="/nearest_wall"/>
+    </node>
+</launch>

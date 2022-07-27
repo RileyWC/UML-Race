@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="race_solver" type="race_solver_node" name="race_solver" output="screen">
+    </node>
+   <!--<include file="$(find uml_race)/launch/racetrack.launch"/> !-->
+</launch>
